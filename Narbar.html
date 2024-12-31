@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Narbar</title>
+    <link rel="stylesheet" href="Narbar.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- MDB CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button
+          data-mdb-collapse-init
+          class="navbar-toggler"
+          type="button"
+          data-mdb-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Navbar brand -->
+          <a class="navbar-brand mt-2 mt-lg-0" href="#">
+            <img
+              src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+              height="15"
+              alt="MDB Logo"
+              loading="lazy"
+            />
+          </a>
+          <!-- Left links -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboard</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+          <a class="text-reset me-3" href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+
+          <div class="dropdown">
+            <a
+              data-mdb-dropdown-init
+              class="text-reset me-3 dropdown-toggle hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bell"></i>
+              <span class="badge rounded-pill badge-notification bg-danger"
+                >1</span
+              >
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuLink"
+            >
+              <li>
+                <a class="dropdown-item" href="#">Some news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Another news</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dropdown">
+            <a
+              data-mdb-dropdown-init
+              class="dropdown-toggle d-flex align-items-center hidden-arrow"
+              href="#"
+              id="navbarDropdownMenuAvatar"
+              role="button"
+              aria-expanded="false"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                class="rounded-circle"
+                height="25"
+                alt="User Avatar"
+                loading="lazy"
+              />
+            </a>
+            <ul
+              class="dropdown-menu dropdown-menu-end"
+              aria-labelledby="navbarDropdownMenuAvatar"
+            >
+              <li>
+                <a class="dropdown-item" href="#">My profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+<!-- Section 2-->
+    <!-- Carousel wrapper -->
+    <div
+      id="carouselBasicExample"
+      class="carousel slide carousel-fade"
+      data-mdb-ride="carousel"
+      data-mdb-carousel-init
+    >
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-mdb-target="#carouselBasicExample"
+          data-mdb-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="/Img/LY HONG.jpg"
+            class="d-block w-100"style
+            alt="Sunset Over the City"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(22).webp"
+            class="d-block w-100"
+            alt="Canyon at Night"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Slides/img%20(23).webp"
+            class="d-block w-100"
+            alt="Cliff Above a Stormy Sea"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-mdb-target="#carouselBasicExample"
+        data-mdb-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel wrapper -->
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.0/mdb.min.js"></script>
+
+    <header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container-fluid">
+          <button
+            data-mdb-collapse-init
+            class="navbar-toggler"
+            type="button"
+            data-mdb-target="#navbarExample01"
+            aria-controls="navbarExample01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <div class="menu">
+            <div class="collapse navbar-collapse" id="navbarExample01">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+      <!-- Navbar -->
+      <!-- Section 2 -->
+      <!-- Tabs navs -->
+      <div class="Hong">
+        <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a
+              data-mdb-tab-init
+              class="nav-link active"
+              id="ex1-tab-1"
+              href="#ex1-tabs-1"
+              role="tab"
+              aria-controls="ex1-tabs-1"
+              aria-selected="true"
+              >Tab 1</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              data-mdb-tab-init
+              class="nav-link"
+              id="ex1-tab-2"
+              href="#ex1-tabs-2"
+              role="tab"
+              aria-controls="ex1-tabs-2"
+              aria-selected="false"
+              >Tab 2</a
+            >
+          </li>
+          <li class="nav-item" role="presentation">
+            <a
+              data-mdb-tab-init
+              class="nav-link"
+              id="ex1-tab-3"
+              href="#ex1-tabs-3"
+              role="tab"
+              aria-controls="ex1-tabs-3"
+              aria-selected="false"
+              >Tab 3</a
+            >
+          </li>
+        </ul>
+        <!-- Tabs navs -->
+
+        <!-- Tabs content -->
+        <div class="tab-content" id="ex1-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex1-tabs-1"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-1"
+          >
+            Tab 1 content
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ex1-tabs-2"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-2"
+          >
+            Tab 2 content
+          </div>
+          <div
+            class="tab-pane fade"
+            id="ex1-tabs-3"
+            role="tabpanel"
+            aria-labelledby="ex1-tab-3"
+          >
+            Tab 3 content
+          </div>
+        </div>
+      </div>
+      <!-- Tabs content -->
+      <!-- Section 3 -->
+      <!-- Background image -->
+      <div
+        class="p-5 text-center bg-image"
+        style="
+          background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+          height: 400px;
+        "
+      >
+        <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+          <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-white">
+              <h1 class="mb-3">Heading</h1>
+              <h4 class="mb-3">Subheading</h4>
+              <a
+                data-mdb-ripple-init
+                class="btn btn-outline-light btn-lg"
+                href="#!"
+                role="button"
+                >Call to action</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+    <!-- Section 4 Card -->
+     <!-- Section 5 -->
+      <div class="Menghong">
+
+        <data value=""></data>
+        <div class="spinner-grow text-primary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-secondary" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-success" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-danger" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-warning" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-info" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    <!-- //////// -->
+    <div class="card-group Meng">
+      <div class="card">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+          class="card-img-top"
+          alt="Hollywood Sign on The Hill"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+          class="card-img-top"
+          alt="Palm Springs Road"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This card has supporting text below as a natural lead-in to
+            additional content.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+          class="card-img-top"
+          alt="Los Angeles Skyscrapers"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This card has even longer content than the
+            first to show that equal height action.
+          </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <!-- Section Footer  -->
+    <footer class="bg-body-tertiary text-center text-lg-start">
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
